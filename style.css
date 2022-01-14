@@ -22,7 +22,7 @@ body{
 .header-container{
     display: flex;
     align-items: center;
-    margin: 50px 0px;
+    margin: 60px 0px;
 }
 
 .header-text{
@@ -41,7 +41,7 @@ body{
     color: #3A3A3A;
 }
 
-.btn{
+.btn-bg{
     display: flex;
     align-items: center;
     background-color: #E02C6D;
@@ -51,7 +51,7 @@ body{
     padding: 0 24px;
 }
 
-.btn a{
+.btn-bg a{
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 600;
@@ -68,8 +68,22 @@ body{
     background-image: url(images/Circle\ design.svg);
     background-position: center;
     background-size: 100%;
+    animation: pulse 5s infinite;
 }
 
+@keyframes pulse {
+    0% {
+      background-color: #e02c6e2c;
+      border-radius: 50%;
+    }
+    50%{
+        background-color: #6c6c6c28;
+    }
+    100% {
+      background-color: #ff403631;
+      border-radius: 50%;
+    }
+  }
 /* Popular Collection Start */
 
 .popular-title{
@@ -131,4 +145,53 @@ body{
     color: #5E6366;
     font-size: 13px;
     font-weight: 600;
+}
+
+/* .btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-icon-color{
+    color: #E02C6D;
+} */
+
+/* Footer Section Start  */
+
+footer{
+    background-color: #0A0826;
+    height: 240px;
+}
+
+.footer-container{
+    padding: 50px 0px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 35px;
+}
+
+.footer-icon{
+    background-color: #ffffff10;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-top: 17px;
+}
+
+.footer-text h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer-text p{
+    font-size: 14px;
 }
