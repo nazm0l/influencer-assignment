@@ -17,7 +17,7 @@ body{
     padding: 0 25px;
 }
 
-/* Header Nav  */
+/*------------------------ Header Nav --------------------- */
 
 #nav-text{
     background-color: #e02c6e56;
@@ -28,7 +28,7 @@ body{
     color: #3A3A3A;
 }
 
-/* Banner Section Start */
+/*----------------- Banner Section Start -------------------*/
 
 .banner{
     display: grid;
@@ -103,7 +103,8 @@ body{
       border-radius: 50%;
     }
   }
-/* Popular Collection Start */
+
+/*---------------------- Popular Collection Start ----------------*/
 
 .popular-title{
     color: #3A3A3A;
@@ -185,7 +186,7 @@ body{
     color: #E02C6D;
 }
 
-/* Video Gallery Section  */
+/*------------------------ Video Gallery Section -------------------- */
 
 .video-gallery{
     display: flex;
@@ -197,7 +198,7 @@ iframe{
     box-shadow: 0 0px 40px 0 rgba(0, 0, 0, 0.363);
 }
 
-/* Footer Section Start  */
+/*----------------- Footer Section Start ----------------------------- */
 
 footer{
     background-color: #0A0826;
@@ -233,7 +234,7 @@ footer{
 
 
 
-  /* Tablet Responsive */
+  /*-------------------- Tablet Responsive -----------------------*/
 
   @media only screen and (max-width: 950px) {
     
@@ -265,7 +266,7 @@ footer{
   }
 
 
-  /* Mobile Responsive */
+  /*-------------------- Mobile Responsive -----------------------*/
 
 @media only screen and (max-width: 600px) {
     
