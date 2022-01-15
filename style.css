@@ -19,22 +19,24 @@ body{
 
 /* Header Section Start */
 
-.header-container{
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+}
+
+.left-banner{
     display: flex;
-    align-items: center;
-    margin: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.header-text{
-    margin-right: 133px;
-}
-
-.header-text h2{
+.left-banner h2{
     font-size: 52px;
     color: #3A3A3A;
 }
 
-.header-text p{
+.left-banner p{
     font-size: 16px;
     margin: 16px 0px;
     font-weight: 600;
@@ -63,7 +65,13 @@ body{
     margin-left: 8px;
 }
 
-.header-img{
+.right-banner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-banner img{
     width: 440px;
     background-image: url(images/Circle\ design.svg);
     background-position: center;
@@ -169,10 +177,12 @@ body{
 footer{
     background-color: #0A0826;
     height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-container{
-    padding: 50px 0px;
     text-align: center;
     color: #FFFFFF;
     line-height: 35px;
@@ -195,3 +205,70 @@ footer{
 .footer-text p{
     font-size: 14px;
 }
+
+
+
+  /* Tablet Responsive */
+
+  @media only screen and (max-width: 950px) {
+    
+    .banner{
+        grid-template-columns: 1fr;
+    }
+
+    .left-banner{
+        order: 2;
+        padding: 50px 0px;
+    }
+
+    .left-banner h2 {
+        font-size: 32px;
+    }
+
+    .right-banner{
+        justify-content: center;
+    }
+
+    .right-banner img {
+        width: 80%;
+    }
+    
+    .products{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+  }
+
+
+  /* Mobile Responsive */
+
+@media only screen and (max-width: 600px) {
+    
+    .banner{
+        grid-template-columns: 1fr;
+    }
+
+    .left-banner{
+        order: 2;
+        padding: 50px 5px 0px 5px;
+        text-align: center;
+    }
+
+    .left-banner h2 {
+        font-size: 32px;
+    }
+
+    .right-banner{
+        justify-content: center;
+    }
+
+    .right-banner img {
+        width: 80%;
+    }
+    
+    .products{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 0;
+    }
+  }
